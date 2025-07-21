@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MovimientosService } from './movimientos.service';
+import { AwsApiService } from './aws-api.service';
 
-describe('MovimientosService', () => {
-  let service: MovimientosService;
+describe('AwsApiService', () => {
+  let service: AwsApiService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(MovimientosService);
+    service = TestBed.inject(AwsApiService);
   });
 
   it('should be created', () => {

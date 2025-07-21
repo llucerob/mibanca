@@ -60,7 +60,7 @@ export class RegistrarMovimientoPage {
     };
 
     try {
-      await this.awsApi.insertarMovimiento(movimiento);
+      await this.awsApi.registrarMovimiento(movimiento);
       this.router.navigate(['/movimientos']);
     } catch (error) {
       console.error('Error al guardar movimiento', error);

@@ -5,10 +5,9 @@ import { lastValueFrom } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class MovimientosService {
+export class AwsApiService {
 
-  private apiUrl = 'https://TU_API_GATEWAY.amazonaws.com'; // Reemplaza con tu endpoint real
-
+  private apiUrl = 'https://i5mgyqrh30.execute-api.us-east-1.amazonaws.com'; 
   constructor(private http: HttpClient) {}
 
   async registrarMovimiento(movimiento: any) {
